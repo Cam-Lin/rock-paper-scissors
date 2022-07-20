@@ -28,13 +28,25 @@ function playRound(computer) {
 
 //The full game lasts 5 rounds
 function game() {
+    let name = prompt(`What's your name?`);
     let i = 5;
     while (i > 0) {
         i--;
         console.log(playRound(getComputerChoice()));
     }
+    if (computerWins > userWins) {
     return `Computer won: ${computerWins} times
-    User won: ${userWins} times`;
+    ${name} won: ${userWins} times
+    Computer reigns supreme!`;
+    } else if (computerWins < userWins) {
+        return `Computer won: ${computerWins} times
+    ${name} won: ${userWins} times
+    ${name} defeated the machine!`;
+    } else {
+        return `Computer won: ${computerWins} times
+    ${name} won: ${userWins} times
+    It's a tie!`;
+    }
 
 }
 
