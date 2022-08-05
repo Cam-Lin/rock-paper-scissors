@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/ee5fdf54f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <img id="background" src="./img/background.jpg">
+    <header id="header">
+        <div id="top-bar">
+            <img id='h-logo' src="./img/logo.webp">
+            <i class="fa-solid fa-circle-question" id="side-menu" onclick="openSideMenu()"></i>
+            <div id="menu-container" onclick="closeSideMenu()">
+                <i class="fa-solid fa-square-xmark" id="side-close" onclick="closeSideMenu()"></i>
+                <h3>How to play</h3>
+                <h4>Follow your training and emerge victorious!</h4>
+                <hr>
+                <p class="p-nav">This is a WH40k take on rock-paper-scissors.</p>
+                <ul>
+                    <li>Rock = Bolter</li>
+                    <li>Paper = Power Armor</li>
+                    <li>Scissors = Choppa!</li>
+                </ul>
+                <p class="p-nav">Best of five wins the match.</p>
+                <hr>
+                <h4>Go forth and make your Emperor proud</h4>
+                <hr>
+                <div class="skulls">
+                    <i class="fa-solid fa-skull" id="skull"></i>
+                    <i class="fa-solid fa-skull" id="skull"></i>
+                    <i class="fa-solid fa-skull" id="skull"></i>
+                </div>
+            </div>
+        </div>
+        <h1>Bolter - Armor - Choppa!</h1>
+    </header>
+    <section id="game">
+        <figure class="fig-box">
+            <img id ='game-icon' src="./img/bolter.png" alt="A heavily adorned space gun.">
+            <figcaption>Bolter</figcaption>
+        </figure>
+        <figure class="fig-box">
+            <img id ='game-icon' src="./img/armor.png" alt="A futuristic sci-fi helmet with red eyes.">
+            <figcaption>Power Armor</figcaption>
+        </figure>
+        <figure class="fig-box">
+            <img id ='game-icon' src="./img/choppa.png" alt="A giant axe.">
+            <figcaption>Choppa!</figcaption>
+        </figure>
+    </section>
+    <h2 id="score">Score: </h2>
+    <footer>
+        <p class="p-footer">Non-profit fan project</p>
+        <div class="div-footer">
+            <a class='pfooter'  href="https://github.com/Cam-Lin" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <p class="p-footer">Cam Acuna 2022</p>
+    </footer>
 </body>
 </html>
