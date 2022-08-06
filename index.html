@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/ee5fdf54f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
                     <li>Paper = Power Armor</li>
                     <li>Scissors = Choppa!</li>
                 </ul>
-                <p class="p-nav">Best of five wins the match.</p>
+                <p class="p-nav">First to reach five wins the match.</p>
                 <hr>
                 <h4>Go forth and make your Emperor proud</h4>
                 <hr>
@@ -40,20 +40,27 @@
         <h1>Bolter - Armor - Choppa!</h1>
     </header>
     <section id="game">
-        <figure class="fig-box">
-            <img id ='game-icon' src="./img/bolter.png" alt="A heavily adorned space gun.">
+        <figure class="fig-box" data-key="0" id="0">
+            <img class='game-icon' src="./img/bolter.png" alt="A heavily adorned space gun.">
             <figcaption>Bolter</figcaption>
         </figure>
-        <figure class="fig-box">
-            <img id ='game-icon' src="./img/armor.png" alt="A futuristic sci-fi helmet with red eyes.">
+        <figure class="fig-box" data-key="1" id="1">
+            <img class='game-icon' src="./img/armor.png" alt="A futuristic sci-fi helmet with red eyes.">
             <figcaption>Power Armor</figcaption>
         </figure>
-        <figure class="fig-box">
-            <img id ='game-icon' src="./img/choppa.png" alt="A giant axe.">
+        <figure class="fig-box" data-key="2" id="2">
+            <img class='game-icon' src="./img/choppa.png" alt="A giant axe.">
             <figcaption>Choppa!</figcaption>
         </figure>
+        <div id="results" onclick="hideResults()">
+        </div>
     </section>
-    <h2 id="score">Score: </h2>
+    <div id="div-score">    
+        <h2 id="score">Score:</h2>
+        <p class="score-count" id="user-wins">0</p>
+        <p class="score-count">/</p>
+        <p class="score-count" id="computer-wins">0</p>
+    </div>
     <footer>
         <p class="p-footer">Non-profit fan project</p>
         <div class="div-footer">
@@ -61,5 +68,8 @@
         </div>
         <p class="p-footer">Cam Acuna 2022</p>
     </footer>
+    <audio data-key="0" src="./sounds/gun.mp3"></audio>
+    <audio data-key="1" src="./sounds/armor.mp3"></audio>
+    <audio data-key="2" src="./sounds/chainsaw.mp3"></audio>
 </body>
 </html>
