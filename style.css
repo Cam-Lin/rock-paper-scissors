@@ -1,9 +1,3 @@
-.-a-few-illustration--1-hex { color: #242540; }
-.-a-few-illustration--4-hex { color: #6092A6; }
-.-a-few-illustration--5-hex { color: #F2594B; }
-.Total-War:-Warhammer-1-hex { color: #205A8C; }
-.Total-War:-Warhammer-5-hex { color: #0D0D0D; }
-
 @font-face {
     font-family: 'wh1';
     src: url('./fonts/wh.otf') format('opentype');
@@ -53,9 +47,10 @@ header {
     margin-left: 0.4rem;
 }
 
-i {
+.fa-circle-question {
     color: aliceblue;
     margin-right: 0.7rem;
+    cursor: pointer;
 }
 
 h1 {
@@ -77,17 +72,22 @@ h1 {
     justify-content: space-around;
 }
 
+.fig-box:nth-of-type(1) {
+    margin-bottom: 0;
+}
+
 .fig-box {
     height: 5.5rem;
     width: 5.5rem;
     border: solid 2px #205A8C;
     border-radius: 4px;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .play {
     transform: scale(1.3);
-    border-color: green;
+    border-color: #20A152;
     box-shadow: 0 0 1rem #205A8C;
 }
 
@@ -116,12 +116,12 @@ figcaption {
     color: aliceblue;
 }
 
-#results {
+.results {
     position: absolute;
     width: 18rem;
     height: 8rem;
-    background-color: #205A8C;
-    border: double 6px #242540;
+    background: radial-gradient(circle, rgba(32,90,140,1) 0%, rgba(36,37,64,1) 100%);
+    border: double 6px #6092A6;
     border-radius: 5px;
     top: 35%;
     display: none;
@@ -131,6 +131,50 @@ figcaption {
     font-family: wh1;
     font-size: 1.4rem;
     opacity: .9;
+}
+
+.final-results-win {
+    position: absolute;
+    width: 18rem;
+    height: 12rem;
+    background: radial-gradient(circle, rgba(32,90,140,1) 0%, rgba(36,37,64,1) 100%);
+    border: double 6px green;
+    border-radius: 5px;
+    top: 35%;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: #20A152;
+    font-family: wh1;
+    font-size: 1.4rem;
+    opacity: 1;
+}
+
+.final-results-lose {
+    position: absolute;
+    width: 18rem;
+    height: 12rem;
+    background: radial-gradient(circle, rgba(32,90,140,1) 0%, rgba(36,37,64,1) 100%);
+    border: double 6px #97161B;
+    border-radius: 5px;
+    top: 35%;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: #D9042B;
+    font-family: wh1;
+    font-size: 1.4rem;
+    opacity: 1;
+}
+
+button {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2rem;
+    border: solid 2px #6092A6;
+    font-family: combat;
+    background-color: #242540;
+    color: #6092A6;
 }
 
 .p-results {
@@ -178,6 +222,10 @@ footer {
 
 .div-footer {
     display: inline-block;
+}
+
+.fa-github {
+    margin: 0.3rem;
 }
 
 #menu-container {
@@ -233,4 +281,42 @@ ul {
 #skull {
     text-align: center;
     color: #242540;
+}
+
+@media only screen
+    and (min-device-width:600px)
+    and (orientation: landscape) {
+    
+    #game {
+        flex-direction: row;
+        max-height: 45vh;
+    }
+    #menu-container {
+        width: 60vw;
+        height: 85vh;
+    }
+
+    #menu-container h3 {
+        font-family: wh1;
+        font-size: 1.5rem;
+        margin-top: -1.5rem;
+        margin-bottom: 0rem;
+        font-size: 0.8rem;
+    }
+
+    #menu-container h4 {
+        font-family: wh1;
+        font-size: 0.8rem;
+    }
+
+    hr {
+        width: 100%;
+        border: 1px solid #242540;
+        margin: 0;
+    }
+
+    .skulls {
+        margin: 1rem 0;
+        display: inline-block;
+    }
 }
