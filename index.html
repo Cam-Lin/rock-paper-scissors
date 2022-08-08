@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boler - Armor - Choppa!</title>
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/ee5fdf54f0.js" crossorigin="anonymous"></script>
@@ -13,7 +13,9 @@
     <img id="background" src="./img/background.jpg">
     <header id="header">
         <div id="top-bar">
-            <img id='h-logo' src="./img/logo.webp">
+            <a href="https://warhammer40000.com/" target="_blank">
+                <img id='h-logo' src="./img/logo.webp" alt="Warhammer 40k written on a metallic plate resembling wings">
+            </a>
             <i class="fa-solid fa-circle-question" id="side-menu" onclick="openSideMenu()"></i>
             <div id="menu-container" onclick="closeSideMenu()">
                 <i class="fa-solid fa-square-xmark" id="side-close" onclick="closeSideMenu()"></i>
@@ -52,7 +54,7 @@
             <img class='game-icon' src="./img/choppa.png" alt="A giant axe.">
             <figcaption>Choppa!</figcaption>
         </figure>
-        <div id="results" onclick="hideResults()">
+        <div class="results" onclick="hideResults()">
         </div>
     </section>
     <div id="div-score">    
@@ -64,7 +66,7 @@
     <footer>
         <p class="p-footer">Non-profit fan project</p>
         <div class="div-footer">
-            <a class='pfooter'  href="https://github.com/Cam-Lin" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class='pfooter' href="https://github.com/Cam-Lin" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
         </div>
         <p class="p-footer">Cam Acuna 2022</p>
     </footer>
