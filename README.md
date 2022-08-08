@@ -13,4 +13,4 @@ Images
 Sounds
 - "Shield Bash impact" by Hybrid_V: https://freesound.org/s/319590/
 - "Gun shot" by schots: https://freesound.org/s/382735/
-- "Chainsaw, Moderately Distant, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
+- "Cut Through Armor / Slice / Clang" by SyphenZent: https://freesound.org/people/SypherZent/sounds/420675/
