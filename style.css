@@ -290,6 +290,7 @@ ul {
         flex-direction: row;
         max-height: 45vh;
     }
+    /*
     #menu-container {
         width: 60vw;
         height: 85vh;
@@ -318,6 +319,7 @@ ul {
         margin: 1rem 0;
         display: inline-block;
     }
+    */
 }
 
 @media only screen and (min-device-width:768px) {
@@ -341,10 +343,11 @@ ul {
     .score-count {
         margin: 0 1rem 0 0;
     }
-
+    /*
     .results {
         scale: 1.5;
     }
+    */
 }
 /*
 @media only screen and (min-device-width:992px) {
