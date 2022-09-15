@@ -150,7 +150,13 @@ function scoreUpdate() {
     userWinsText.textContent = userWins;
     computerWinsText.textContent = computerWins;
 }
-
+function checkHide() {
+    if (userWins >= 5 || computerWins >= 5) {
+        reset();
+    } else {
+        hideResults();
+    }
+}
 
 //Auxiliary sideMenu() functions
 function menuOpacityUp() {
