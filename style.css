@@ -272,6 +272,7 @@ button {
     font-family: wh1;
     height: 2rem;
     margin: 0 0.7rem 0 0;
+    font-size: 1.5rem;
 }
 
 .score-count {
@@ -363,14 +364,14 @@ ul {
     color: #242540;
 }
 
-@media (orientation: landscape) and (max-device-width:772px) {
+@media (orientation: landscape) and (max-device-height:440px) {
     #game {
         flex-direction: row;
         max-height: 45vh;
     }
 
     .fig-box {
-        scale: 0.8;
+        scale: 0.7;
     }
 }
 
@@ -388,7 +389,7 @@ ul {
     .fig-box {
         scale: 1.5;
     }
-
+    
     #score, .score-count {
         scale: 2;
     }
