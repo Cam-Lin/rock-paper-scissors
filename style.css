@@ -363,7 +363,7 @@ ul {
     color: #242540;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-device-width:772px) {
     #game {
         flex-direction: row;
         max-height: 45vh;
