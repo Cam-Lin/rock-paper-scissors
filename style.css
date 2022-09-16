@@ -363,15 +363,19 @@ ul {
     color: #242540;
 }
 
-@media only screen and (min-device-width:600px) {
-    
+@media (orientation: landscape) {
     #game {
         flex-direction: row;
         max-height: 45vh;
     }
+
+    .fig-box {
+        scale: 0.8;
+    }
 }
 
-@media (orientation: landscape) {
+@media only screen and (min-device-width:600px) {
+    
     #game {
         flex-direction: row;
         max-height: 45vh;
