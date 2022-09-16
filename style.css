@@ -290,11 +290,11 @@ ul {
         flex-direction: row;
         max-height: 45vh;
     }
- 
 }
 
-@media only screen and (min-device-width:992px) {
-
+@media only screen
+    and (min-device-width:992px)
+    and (min-device-height: 500px) {
     .fig-box {
         scale: 1.5;
     }
