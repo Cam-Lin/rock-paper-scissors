@@ -364,14 +364,17 @@ ul {
     color: #242540;
 }
 
-@media (orientation: landscape) and (max-device-height:440px) {
+@media (orientation: landscape) {
     #game {
         flex-direction: row;
         max-height: 45vh;
     }
+}
+
+@media (orientation: landscape) and (max-device-height:440px) {
 
     .fig-box {
-        scale: 0.7;
+        scale: 0.8;
     }
 }
 
